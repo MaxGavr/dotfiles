@@ -1,0 +1,72 @@
+set encoding=utf-8
+
+set guifont=DejaVu_Sans_Mono:h10:cRUSSIAN
+
+set keymap=russian-jcukenwin
+set imsearch=0
+set iminsert=0
+
+set guioptions+=!
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
+
+if has("gui_running")
+    set lines=999 columns=999
+endif
+
+nnoremap <Space> <Nop>
+let mapleader="\<Space>"
+let maplocalleader="\<Space>"
+
+map <F12> :split $MYVIMRC<CR>
+map <S-F12> :source $MYVIMRC<CR>
+
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+set ignorecase
+set smartcase
+set hlsearch
+
+call plug#begin('~/vimfiles/plugged')
+
+Plug 'scrooloose/nerdtree'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'lervag/vimtex'
+Plug 'morhetz/gruvbox'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/syntastic'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-repeat'
+
+call plug#end()
+
+colorscheme gruvbox
+
+" 'Syntastic' plugin settings
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=2
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
+
+" 'vimtex' plugin settings
+let g:vimtex_view_method='general'
+let g:vimtex_view_general_viewer='sumatrapdf'
+let g:vimtex_view_general_options = '-reuse-instance -forward-search @tex @line @pdf'
+let g:vimtex_view_general_options_latexmk = '-reuse-instance'
+
+" 'NERDTree' plugin settings
+let g:NERDTreeShowBookmarks=1
+
+map <Leader>tt :NERDTreeToggle<CR>
+map <Leader>tf :NERDTreeFocus<CR>
+

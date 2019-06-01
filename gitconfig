@@ -1,0 +1,23 @@
+[user]
+	name = Max Gavrilyuk
+	email = max.gavr.gmi@gmail.com
+[merge]
+	tool = kdiff3
+[diff]
+	guitool = kdiff3
+[core]
+	editor = gvim
+	autocrlf = true
+	safecrlf = warn
+[credential]
+[alias]
+	co = checkout
+	cm = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

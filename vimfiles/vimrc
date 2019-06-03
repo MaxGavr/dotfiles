@@ -52,6 +52,14 @@ call plug#end()
 
 colorscheme gruvbox
 
+if &diff
+    nnoremap dr :diffget 3<CR>
+    nnoremap dl :diffget 1<CR>
+    nnoremap dp :diffput 2<CR>
+    nnoremap <C-J> ]c
+    nnoremap <C-K> [c
+endif
+
 " 'Syntastic' plugin settings
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=2

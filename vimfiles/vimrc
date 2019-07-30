@@ -47,6 +47,7 @@ Plug 'scrooloose/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
+Plug 'mtdl9/vim-log-highlighting'
 
 call plug#end()
 
@@ -78,3 +79,5 @@ let g:NERDTreeShowBookmarks=1
 map <Leader>tt :NERDTreeToggle<CR>
 map <Leader>tf :NERDTreeFocus<CR>
 
+" 'vim-log-highlighting' plugin settings
+hi def link logBrackets NONE

@@ -33,6 +33,7 @@ set expandtab
 set ignorecase
 set smartcase
 set hlsearch
+set autoread
 
 call plug#begin('~/vimfiles/plugged')
 

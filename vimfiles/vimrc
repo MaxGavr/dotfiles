@@ -58,6 +58,7 @@ colorscheme gruvbox
 if &diff
     nnoremap dr :diffget 3<CR>
     nnoremap dl :diffget 1<CR>
+    nnoremap du :diffupdate<CR>
     nnoremap <C-J> ]c
     nnoremap <C-K> [c
 endif

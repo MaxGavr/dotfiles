@@ -23,6 +23,7 @@
 	sh = stash
 	d = diff
 	dt = difftool
+    mt = mergetool
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [filter "lfs"]
 	clean = git-lfs clean -- %f

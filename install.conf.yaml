@@ -9,5 +9,6 @@
     ~/vimfiles:
     ~/.gitconfig:
     ~/Documents/WindowsPowerShell/profile.ps1: profile.ps1
+    ~/AppData/Roaming/doublecmd/doublecmd.xml:
 
 - shell: []

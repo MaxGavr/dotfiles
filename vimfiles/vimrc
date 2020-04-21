@@ -82,6 +82,7 @@ let g:vimtex_view_general_options_latexmk = '-reuse-instance'
 
 " 'NERDTree' plugin settings
 let g:NERDTreeShowBookmarks=1
+let g:NERDTreeShowHidden=1
 
 map <Leader>tt :NERDTreeToggle<CR>
 map <Leader>tf :NERDTreeFocus<CR>

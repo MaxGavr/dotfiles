@@ -34,7 +34,9 @@ set expandtab
 set ignorecase
 set smartcase
 set hlsearch
+
 set autoread
+au CursorHold * checktime
 
 call plug#begin('~/vimfiles/plugged')
 

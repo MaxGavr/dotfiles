@@ -24,6 +24,8 @@
 	d = diff
 	dt = difftool
     mt = mergetool
+    sw = switch
+    re = restore
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [filter "lfs"]
 	clean = git-lfs clean -- %f
